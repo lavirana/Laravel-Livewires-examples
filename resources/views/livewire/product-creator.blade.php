@@ -17,6 +17,12 @@
         <p class="text-danger">{{ $message }}</p> 
         @enderror
 
-    <button type="submit" class="btn btn-success mt-3" >Submit</button>
+    <button type="submit" class="btn btn-success mt-3" wire:loading.attr="disabled" >Submit</button>
+    <button type="button" class="btn btn-danger mt-3" wire:click.prevent="resetForm" >Reset</button>
+
+    <div wire:loading >
+        Product loading..
+    </div>
+
  </form>
 </div>

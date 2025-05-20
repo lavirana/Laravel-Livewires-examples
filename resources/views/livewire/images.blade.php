@@ -1,5 +1,9 @@
 <div>
-     <table class="table table-striped table-bordered" >
+
+<div>
+    <input type="text" name="search" class="form-control" placeholder="Search" wire:model="search" wire:keyup="set('search', $event.target.value)">
+</div>
+     <table class="table table-striped table-bordered mt-3" >
         <thead>
             <tr>
                 <th>Id</th>

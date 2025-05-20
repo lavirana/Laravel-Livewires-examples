@@ -13,6 +13,12 @@ class ProductCreator extends Component
         return view('livewire.product-creator');
     }
 
+    public function resetForm(){
+        $this->name = "";
+        $this->price = "";
+        $this->detail = "";
+    }
+
     public function submit(){
         $this->validate([
             "name" => "required",
