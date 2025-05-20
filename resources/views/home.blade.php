@@ -28,5 +28,19 @@
             </div>
         </div>
     </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">{{ __('All Products') }}</div>
+                <div class="card-body">
+                   <livewire:products />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+        
+        </div>
+    </div>
 </div>
 @endsection

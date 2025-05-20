@@ -1,8 +1,16 @@
-<div>
+<div wire:init="loadCategories" >
  <form wire:submit.prevent="submit">
 
+ <label for="">Category:</label>
+ <select class="form-select" wire:model="category">
+    <option>Select Category</option>
+    @foreach($categories as $category)
+<option value="{{ $category->name }}">{{ $category->name }}</option>
+    @endforeach
+ </select>
+
  <label for="">Name:</label>
-    <input type="text" class="form-control" wire:model="name">
+    <input type="text" class="form-control" wire:model="name" wire:dirty.class="is-invalid" wire:dirty:class.remove="is-invalid">
         @error("name")
         <p class="text-danger">{{ $message }}</p>
         @enderror
@@ -22,6 +30,9 @@
 
     <div wire:loading >
         Product loading..
+    </div>
+    <div wire:dirty>
+        Unsaved data
     </div>
 
  </form>

@@ -26,4 +26,8 @@ class Images extends Component
     public function download($path){
         return Storage::download($path);
     }
+
+    public function delete($id){
+        Image::find($id)->delete();
+    }
 }

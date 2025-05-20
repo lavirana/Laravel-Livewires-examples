@@ -9,6 +9,7 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Download</th>
+                <th>Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -17,6 +18,8 @@
             <td>{{ $image->id }}</td>
             <td>{{ $image->title }}</td>
             <td><button wire:click="download('{{ $image->filepath }}')" class="btn btn-success">Download</button></td>
+            <td><button wire:click="delete('{{ $image->id }}')"
+            wire:confirm="Are you sure you want to remove this Image?" class="btn btn-danger">Delete</button></td>
         </tr>
 
             @endforeach
