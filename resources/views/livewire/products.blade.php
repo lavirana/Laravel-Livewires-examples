@@ -1,4 +1,4 @@
-<div wire:init="loadProducts" wire:poll.15s="loadProducts">
+<div wire:init="loadProducts" wire:poll.5s="loadProducts">
      <table class="table table-striped table-bordered mt-3" >
         <thead>
             <tr>

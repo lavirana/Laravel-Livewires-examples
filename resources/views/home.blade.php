@@ -18,6 +18,14 @@
                 <livewire:photo-upload />
                 </div>
             </div>
+
+            <br>
+            <div class="card">
+                <div class="card-header">{{ __('All Category For Multiselect Practice') }}</div>
+                <div class="card-body">
+                   <livewire:multiselect />
+                </div>
+            </div>
         </div>
         <div class="col-md-4">
             <div class="card">
@@ -29,6 +37,7 @@
         </div>
     </div>
 
+    <br><br>
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card">
@@ -39,7 +48,7 @@
             </div>
         </div>
         <div class="col-md-6">
-        
+       
         </div>
     </div>
 </div>
