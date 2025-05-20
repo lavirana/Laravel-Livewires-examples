@@ -1,0 +1,30 @@
+<?php
+
+namespace App\Livewire;
+
+use App\Models\Product;
+use Livewire\Component;
+
+class ProductCreator extends Component
+{
+    public $name, $price, $detail;
+    public function render()
+    {
+        return view('livewire.product-creator');
+    }
+
+    public function submit(){
+        $this->validate([
+            "name" => "required",
+            "price" => "required|min:5|numeric",
+            "detail" => "required"
+        ]);
+
+        $product = Product::create([
+            'name' => $this->name,
+            'price' => $this->price,
+            'detail' => $this->detail
+        ]);
+        info($product);
+    }
+}
