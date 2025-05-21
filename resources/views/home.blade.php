@@ -48,7 +48,12 @@
             </div>
         </div>
         <div class="col-md-6">
-       
+        <div class="card">
+                <div class="card-header">{{ __('Create Product with Variants') }}</div>
+                <div class="card-body">
+                   <livewire:create-product-with-variants />
+                </div>
+            </div>
         </div>
     </div>
 </div>

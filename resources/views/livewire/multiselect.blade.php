@@ -2,10 +2,10 @@
  <form wire:submit.prevent="submit">
 
  <label for="">Category:</label>
- <select class="form-select select2-cat" wire:model="category">
+ <select class="form-select select2-cat" wire:model="category" multiple>
     <option>Select Category</option>
     @foreach($categories as $category)
-<option value="{{ $category->name }}">{{ $category->name }}</option>
+<option value="{{ $category->id }}">{{ $category->name }}</option>
     @endforeach
  </select>
 
@@ -18,10 +18,10 @@
 @script
 
 <script text="text/javascript">
-    document.addEventListener('livewire:intialized',function(){
+    document.addEventListener('livewire:initialized',function(){
         function loadJavascript(){
             $(".select2-cat").select2().on("change",function(){
-                $wire.set("category_ids", $this.val());
+                $wire.set("category_ids", $(this).val());
             });
         }
         loadJavascript();
