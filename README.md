@@ -15,7 +15,7 @@ This repository contains practical examples of using **Laravel Livewire 3** to b
 
 ![Livewire App UI](https://github.com/user-attachments/assets/e2874b11-bce6-4a55-a4bb-98ff168074a4)
 
-> _Rename your screenshot file to `livewire-app-ui.png` and place it in the root of your repo so it renders above._
+<img width="1440" alt="Screenshot 2025-05-21 at 10 28 53 AM" src="https://github.com/user-attachments/assets/ba72643e-5ce5-46eb-b4c7-d754c1be0120" />
 
 ---
 
