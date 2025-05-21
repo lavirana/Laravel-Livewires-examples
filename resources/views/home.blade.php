@@ -54,6 +54,13 @@
                    <livewire:create-product-with-variants />
                 </div>
             </div>
+<br>
+            <div class="card">
+                <div class="card-header">{{ __('Create Product with Variants') }}</div>
+                <div class="card-body">
+                   <livewire:multi-step-create-product />
+                </div>
+            </div>
         </div>
     </div>
 </div>
