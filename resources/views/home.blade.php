@@ -56,9 +56,23 @@
             </div>
 <br>
             <div class="card">
-                <div class="card-header">{{ __('Create Product with Variants') }}</div>
+                <div class="card-header">{{ __('Wizard Multi Step Form') }}</div>
                 <div class="card-body">
                    <livewire:multi-step-create-product />
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-header">{{ __('Customs Tabs') }}</div>
+                <div class="card-body">
+                   <livewire:custom-tabs />
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-header">{{ __('Upload Product Multiple Images') }}</div>
+                <div class="card-body">
+                   <livewire:upload-product-multiple-images />
                 </div>
             </div>
         </div>

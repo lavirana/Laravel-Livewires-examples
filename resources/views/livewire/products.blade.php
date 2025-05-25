@@ -43,3 +43,14 @@
      </table>
 
 </div>
+
+
+
+<!--<script>
+    window.onscroll = function () {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+            Livewire.dispatch('loadMoreProducts');
+        }
+    };
+</script>-->
+
