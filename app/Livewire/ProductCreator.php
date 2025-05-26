@@ -8,12 +8,20 @@ use Livewire\Component;
 
 class ProductCreator extends Component
 {
-    public $name, $price, $detail, $category;
+    public $name;
+    public $price;
+    public $detail;
+    public $category;
+public $category_id;
+public $brand_id;
+public $brands;
     public $categories = [];
+    public $categories_s = [];
 
     public function loadCategories(){
         info('load categories');
         $this->categories = Category::all();
+        $this->categories_s = Category::pluck('name', 'id')->toArray();
     }
 
     public function render()

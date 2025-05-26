@@ -1,6 +1,9 @@
 <div wire:init="loadCategories" >
  <form wire:submit.prevent="submit">
 
+
+ <x-select label="Category" name="category_id" model="category_id" placeholder="Select Category" :options="$categories_s" />
+
  <label for="">Category:</label>
  <select class="form-select" wire:model="category">
     <option>Select Category</option>
