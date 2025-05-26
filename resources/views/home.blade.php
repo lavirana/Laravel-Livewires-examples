@@ -77,5 +77,22 @@
             </div>
         </div>
     </div>
+
+
+    <br><br>
+
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">{{ __('Google Pie Charts') }}</div>
+                <div class="card-body">
+                   <livewire:google-charts />
+                </div>
+            </div>
+        </div>
+    
+    </div>
 </div>
 @endsection
