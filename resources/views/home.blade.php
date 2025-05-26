@@ -94,5 +94,18 @@
         </div>
     
     </div>
+<br><br>
+    <div class="row justify-content-center">
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">{{ __('Datatables Component') }}</div>
+        <div class="card-body">
+        <livewire:users-table theme="bootstrap-5" />
+        </div>
+    </div>
+</div>
+
+</div>
 </div>
 @endsection
